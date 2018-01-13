@@ -1,19 +1,23 @@
 import React from 'react';
 
+
 // Components
 import Header from './shared/Header';
 import Footer from './shared/Footer';
 import Sidebar from './shared/Sidebar';
-import Home from './home/Home';
+import Routes from './shared/Routes';
+
 
 
 const App = () => {
-    <div>
-        <Header/>
-        <Sidebar/>
-        <Home/>
-        <Footer/>
-    </div>
+	return (
+		<div>
+			<Header />
+			{/* <Sidebar /> */}
+			<Routes />
+			{/* <Footer /> */}
+		</div>
+	)
 }
 
 export default App;

@@ -1,22 +1,24 @@
 import React from 'react';
-import {render} from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-
-import App from './App';
+import App from './components/App';
 import registerServiceWorker from './registerServiceWorker';
 
 // Shared Components
 import Header from './components/shared/Header';
 import Footer from './components/shared/Footer';
+//Loading component here
 
-//Main Components
-import Home from './components/Home';
-import NotFound from './components/Not Found';
+//Store
 
+const Application = () => {
+	return (
+		<BrowserRouter>
+			<App />
+		</BrowserRouter>
+	)
+}
 
-const router = (
-
-)
-
-render(router, document.getElementById('root'));
+render(<Application />, document.getElementById('root'));
 registerServiceWorker();
