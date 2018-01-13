@@ -1,0 +1,10 @@
+# Files to ignore when running eslint
+
+.vs-code
+src/constants
+build
+dist
+node_modules
+config
+scripts
+public

@@ -1,0 +1,57 @@
+{
+	"env": {
+		"browser": true,
+		"node": true,
+		"es6": true,
+		"jest": true
+	},
+	"extends": [
+		"eslint:recommended",
+		"plugin:react/recommended",
+		"plugin:react-app/recommended"
+	],
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": [
+		"react", // https://www.npmjs.com/package/eslint-plugin-react
+		"react-app" // https://www.npmjs.com/package/eslint-plugin-react-app
+	],
+	"rules": {
+		"indent": ["error",
+			"tab",
+			{
+				// More info available at http://eslint.org/docs/rules/indent
+				"SwitchCase": 1
+			}
+		],
+		"quotes": ["warn",
+			"single",
+			{
+				"avoidEscape": true
+			}
+		],
+		"semi": ["warn",
+			"always",
+			{
+				"omitLastInOneLineBlock": true
+			}
+		],
+		"no-unused-vars": ["warn",
+			{
+				"vars": "all", // "all" verifies that all local and global variables are used
+				"args": "none" // "none" ignores unused function args
+			}
+		],
+		"no-console": "warn",
+		// "react/jsx-uses-react": "error",
+		// "react/jsx-uses-vars": "error",
+		"react/prop-types": "warn",
+		"react/no-unescaped-entities": "off",
+		"react/jsx-equals-spacing": ["error", "never"]
+	}
+}
