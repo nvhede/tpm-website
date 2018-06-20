@@ -19,7 +19,7 @@ const styles = {
 
 
 
-class Overview extends Component {
+class NotFound extends Component {
 	render() {
 		return (
 			<Layout>
@@ -29,4 +29,4 @@ class Overview extends Component {
 	}
 }
 
-export default Overview;
+export default NotFound;
