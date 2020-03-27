@@ -1,0 +1,27 @@
+.headerWrapper {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 15vw;
+  min-width: 5vw;
+  height: 100vh;
+  z-index: 100;
+  padding-left: 5px;
+}
+
+.headerLogo {
+  font-size: 5rem;
+  letter-spacing: 0.1em;
+  margin-top: 5vh;
+}
+
+.headerText {
+  transform: rotate(-90deg);
+  transform-origin: center;
+  letter-spacing: 0.1em;
+  position: fixed;
+  bottom: 10vh;
+}

@@ -1,0 +1,17 @@
+.menuWrapper {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 15vw;
+  min-width: 5vw;
+  height: 100vh;
+  z-index: 100;
+  padding-left: 5px;
+}
+
+.menuIcon {
+  font-size: 2rem;
+}

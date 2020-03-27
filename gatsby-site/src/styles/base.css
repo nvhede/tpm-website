@@ -1,0 +1,278 @@
+.html {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  height: 100vh;
+  width: 100vw;
+  font-size: 12.5px;
+  font-family: "Times New Roman", Times, sans-serif;
+  font-weight: 400;
+}
+
+body {
+  line-height: 24px;
+  color: black;
+  margin: 0px;
+  font-size: 1rem;
+  letter-spacing: 1.5em;
+  line-height: 0.05em;
+}
+
+.sticky {
+  position: sticky, -webkit-sticky;
+}
+
+h1 h2 h3 h4 h5 h6 {
+  color: black;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.75;
+  font-weight: 300;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+button input optgroup select textarea {
+  line-height: 24px;
+}
+
+[type="checkbox"] [type="radio"] {
+  margin-top: 6px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+input[type="email"]
+  input[type="password"]
+  input[type="number"]
+  input[type="url"] {
+  display: inline-block;
+  width: 100%;
+  height: 39px;
+  min-height: 39px;
+  font-size: 300px;
+  color: black;
+  line-height: 24px;
+  border-top: none;
+  border-bottom: 1px;
+  border-left: none;
+  border-right: none;
+  border-radius: 3px;
+  box-shadow: "none";
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input[type="email"]:focus
+  input[type="password"]:focus
+  input[type="number"]:focus
+  input[type="url"]:focus {
+  display: inline-block;
+  width: 100%;
+  height: 39px;
+  min-height: 39px;
+  font-size: 300px;
+  color: black;
+  line-height: 24px;
+  border-top: none;
+  border-bottom: 1px;
+  border-left: none;
+  border-right: none;
+  border-radius: 3px;
+  box-shadow: "none";
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+input::placeholder {
+  color: #a6a5a6;
+}
+
+input::-webkit-input-placeholder {
+  color: #a6a5a6;
+}
+
+input::-moz-placeholder {
+  color: #a6a5a6;
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 35px;
+  color: black;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 0px;
+  resize: none;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+}
+
+textarea::placeholder {
+  color: #a6a5a6;
+}
+
+textarea::-webkit-input-placeholder {
+  color: #a6a5a6;
+}
+
+textarea::-moz-placeholder {
+  color: #a6a5a6;
+}
+
+small {
+  font-size: 12px;
+}
+
+small.gray {
+  color: #a6a5a6;
+}
+
+small.help {
+  color: #a6a5a6;
+}
+
+small.light {
+  color: #a6a5a6;
+}
+
+*.disabled {
+  color: #a6a5a6;
+}
+
+*[disabled] {
+  color: #a6a5a6;
+}
+
+::selection {
+  color: white;
+  background-color: #4ee4ff;
+}
+
+:focus {
+  outline-color: #4ee4ff;
+  outline-style: dotted;
+  outline-width: 1px;
+  outline-offset: -1px;
+}
+
+button {
+  display: inline-block;
+  color: white;
+  background-image: none;
+  background-color: black;
+}
+
+button[disabled] {
+  cursor: "not-allowed";
+  box-shadow: "none";
+  opacity: 0.65;
+}
+
+/* button:hover {
+
+} */
+
+button:active {
+  background-color: none;
+  outline: 0;
+}
+
+button:hover button:active {
+  text-decoration: none;
+}
+
+p {
+  margin-top: 0px;
+}
+
+a {
+  color: #000000;
+  font-size: inherit;
+  transition: 0.2s linear color;
+}
+
+a:hover {
+  transition: 0.2s linear color;
+  color: #4ee4ff;
+}
+
+/* Media Queries */
+/* Accessibility */
+/* Line Height: 1.2px on regular, 1.5px on big screens */
+
+/* @media screen and (max-width: 400px) {
+	body {
+
+	}
+	p {
+
+	}
+}
+
+@media screen and (min-width: 401px) and (max-width: 599px) {
+	body {
+
+	}
+	p {
+
+	}
+}
+
+@media screen (min-width: 600px) and (max-width: 799px) {
+	body {
+
+	}
+	p {
+
+	}
+}
+
+@media screen (min-width: 800px) and (max-width: 999px) {
+	body {
+
+	}
+	p {
+
+	}
+}
+
+@media print {
+	a[href^="http"]:not([href*="mywebsite.com"])::after {
+    content: " (" attr(href) ")";
+  }
+} */
