@@ -1,6 +1,5 @@
-import React, { Fragment } from "react"
-import Header from "../components/Header"
-import Menu from "../components/SideMenu"
+import React from "react"
+import Welcome from "../components/Welcome"
 
 const rootStyle = {
   display: "flex",
@@ -9,16 +8,10 @@ const rootStyle = {
   minHeight: "100vh",
 }
 
-const testing = {
-  display: "flex",
-  marginRight: "auto",
-}
-
 const root = props => {
   return (
     <div style={rootStyle}>
-      <Header />
-      <span style={testing}>hello</span>
+      <Welcome />
     </div>
   )
 }
